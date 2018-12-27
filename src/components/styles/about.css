@@ -1,0 +1,19 @@
+.about {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.about-p {
+  color: #5A007B;
+}
+
+@media (min-width: 700px) {
+  .about-h1 {
+    margin-top: 2em;
+    font-size: 3em;
+    /* display: block; */
+    position: fixed;
+    text-align: center;
+    /* left: auto; */
+    right: 5%;
+  }
+}

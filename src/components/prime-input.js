@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Input from './input';
 import { inputs, acceptableInputs, numbers } from './helpers/helpers';
+import './styles/prime-input.css';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
 
@@ -11,8 +12,9 @@ class PrimeInput extends Component {
       string1: '',
       string2: '',
       string3: '',
-      errorMessage: null,
-      httpErr: null
+      errorMessage: 'test error (change to null)',
+      httpErr: null,
+      result: 'test result (change to null)'
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -55,16 +57,17 @@ class PrimeInput extends Component {
     let numberInputs = inputs.map((input, i) => {
       return <Input key={i} text={input.text} name={input.name} id={input.name} current={this.state[input.name]} onChange={this.handleChange}/>  
     });
-
     return (
-      <div className="prime-input" onSubmit={this.handleSubmit}>
-        <form>
-          <div>{this.state.errorMessage ?           this.state.errorMessage : ''}
-          </div>
+      <form className="prime-input" 
+        onSubmit={this.handleSubmit}>
+        <div className='error-container'>{this.state.errorMessage ?           this.state.errorMessage : ''}
+        </div>
+        <div className='number-inputs'>
           {numberInputs}
-          <input type='submit' value='Submit' />
-        </form>
-      </div>
+        </div>
+        <input type='submit' value='Submit' classname='submit-button' />
+        <div className='result'>{this.state.result ? this.state.result : ''}</div>
+      </form>
     );
   }
 }

@@ -1,0 +1,26 @@
+.prime-input {
+  justify-content: center;
+  border: 1px solid #FFBA60;
+  display: grid;
+  grid-template-rows: 15% 35% 25% 25%;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d";
+}
+.error-container {
+  grid-area: a;
+  margin-top: 10px;
+  color: red;
+  font-weight: 700;
+}
+.number-inputs {
+  grid-area: b;
+}
+.submit-button {
+  grid-area: c;
+}
+.result {
+  grid-area: d;
+}

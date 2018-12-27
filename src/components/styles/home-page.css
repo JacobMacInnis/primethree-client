@@ -1,0 +1,23 @@
+.home-page {
+  height: 100vh;
+  background: white;
+  display: grid;
+  grid-template-rows: 15% 20% 45% 25%;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d";
+}
+.logo {
+  grid-area: a;
+}
+.instructions {
+  grid-area: b;
+}
+.input {
+  grid-area: c;
+}
+.results {
+  grid-area: d;
+}

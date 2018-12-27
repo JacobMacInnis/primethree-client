@@ -1,0 +1,14 @@
+.logo {
+  margin: .25em auto;
+  height: 100%;
+}
+
+/* @media (min-width: 700px) {
+  .logo {
+    margin: 2em;
+    height: 180px;
+    display: block;
+    position: fixed;
+    left: 0;
+  } 
+}*/
