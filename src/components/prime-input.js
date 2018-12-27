@@ -7,26 +7,38 @@ class PrimeInput extends Component {
     this.state = {
       string1: '',
       string2: '',
-      string3: ''
+      string3: '',
+      errorMessage: null
     };
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
-    console.log('trying')
-    this.setState({
-      [(event.target.name)]: event.target.value 
-    });
+    let numbers = ['0','1','2','3','4','5','6','7','8','9'];
+    let string = event.target.value;
+  
+    let char = string.substring(string.length -1);
+    if (numbers.indexOf(char) === -1) {
+      this.setState({
+        errorMessage: 'Error: Must be a single digit number (0,1,2,3,4,5,6,7,8,9)'
+       })
+    } else {
+      this.setState({
+        errorMessage: null,
+        [(event.target.name)]: char
+      });
+    }
   }
   render() {
-    const inputs = [{text: '1st Digit', name: 'string1', currentValue: this.state.string1 }, {text: '2nd Digit', name: 'string2', currentValue: this.state.string2 }, {text: '3rd Digit', name: 'string3', currentValue: this.state.string3 }];
-    
+    const inputs = [{text: '1st Digit', name: 'string1'}, {text: '2nd Digit', name: 'string2'}, {text: '3rd Digit', name: 'string3'}];
+
     let numberInputs = inputs.map((input, i) => {
-      return <Input key={i} text={input.text} name={input.name} id={input.name} current={input.currentValue} onChange={this.handleChange}/>  
+      return <Input key={i} text={input.text} name={input.name} id={input.name} current={this.state[input.name]} onChange={this.handleChange}/>  
     });
-    console.log(this.state.string1, this.state.string2, this.state.string3);
+
     return (
       <div className="prime-input">
         <form>
+          {this.state.errorMessage ? <div>{this.state.errorMessage}</div> : ''}
           {numberInputs}
         </form>
       </div>

@@ -8,8 +8,9 @@ export default function Input(props) {
           type='text' 
           name={props.name} 
           id={props.name} 
-          defaultValue={props.current} 
-          onChange={props.onChange}>
+          value={props.current} 
+          onChange={props.onChange}
+          autoComplete="number" >
         </input>
     </label>
   );
