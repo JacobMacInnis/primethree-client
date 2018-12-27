@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-
+import './styles/header-bar.css';
+import logo from '../assets/primethree-logo.png';
 export class HeaderBar extends Component {
   
 	render() {
 		return (
 			<div className="header-bar">
-				<h1>Prime Three</h1>
+				<img className='logo-container'
+				src={logo} alt='header-logo' />
 			</div>
 		);
 	}
