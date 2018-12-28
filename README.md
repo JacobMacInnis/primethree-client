@@ -1,4 +1,4 @@
-![PrimeThree logo](assets/primethree-logo.png "PrimeThree Logo") 
+![PrimeThree logo](src/assets/primethree-logo-readme.png "PrimeThree Logo") 
 # PrimeThree Client
 
 #### PrimeThree Client is a React App built to sync with [PrimeThree Node API Server](https://github.com/JacobMacInnis/primethree-server)
