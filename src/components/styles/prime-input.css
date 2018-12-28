@@ -34,6 +34,7 @@
   grid-area: e;
   color: #5A007B;
   font-size: 1.5em;
+  max-width: 500px;
 }
 .result-link {
   grid-area: f;
