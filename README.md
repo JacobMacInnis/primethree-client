@@ -19,6 +19,11 @@ $ npm start
 - The client will open in localhost:3000
 - after cloning and installing the client visit [PrimeThree Node API Server](https://github.com/JacobMacInnis/primethree-server) to install the Prime Server.  After following the server directions the client and server should work together.
 
+# Screenshots
+
+<img src='https://github.com/JacobMacInnis/primethree-server/blob/master/assets/primethree-mobile-screenshots.png?raw=true' alt='PrimeThree mobile screenshots'>
+
+<img src='https://github.com/JacobMacInnis/primethree-server/blob/master/assets/primethree-desktop-screenshots.png?raw=true' alt='PrimeThree desktop screenshots' width='90vw'>
 
 
 
