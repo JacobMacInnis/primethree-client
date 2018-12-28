@@ -1,4 +1,11 @@
-.logo {
+.input-page-logo {
   margin: .25em auto;
   height: 100%;
+}
+.home-page-logo {
+  margin: .25em auto;
+  height: 100%;
+}
+.landing-page-logo {
+  height: 100px;
 }

@@ -14,6 +14,7 @@ class PrimeInput extends Component {
       string2: '',
       string3: '',
       errorMessage: '',
+      loading: false,
       httpErr: null,
       result: ''
     };
@@ -47,11 +48,13 @@ class PrimeInput extends Component {
       .then(res => {
         if (res.data.result === '-1') {
           this.setState({
-            result: `${res.data.input} was not found in the first 10,000 prime numbers`
+            result: `${res.data.input} was not found in the first 10,000 prime numbers`,
+            loading: false
           });
         } else {
           this.setState({
-            result: `${res.data.input} first apears in the Prime Number ${res.data.result}. It is the ${res.data.index}th Prime Number`
+            result: `${res.data.input} first apears in the Prime Number ${res.data.result}. It is the ${res.data.index}th Prime Number`,
+            loading: false
           })
         }
       })

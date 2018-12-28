@@ -1,18 +1,50 @@
 .home-page {
   height: 100vh;
   display: grid;
-  grid-template-rows: 15% 20% 65%;
+  grid-template-rows: 18% 12% 20% 55%;
   grid-template-areas:
   "a"
   "b"
   "c"
+  "d"
 }
-.logo {
+.home-page-logo {
   grid-area: a;
+  margin: 10px auto;
+  height:15%;
 }
-.input-page {
+.input-page-link {
   grid-area: b;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 1.1em;
+  font-weight: 700;
+  background-color: white;
+  text-decoration: none;
+  padding: 6px;
+  border: 3px solid rgba(255,186,96,1);
+  border-radius: 10px;
+}
+.results-title-container {
+  grid-area: c;
 }
 .results {
-  grid-area: c;
+  grid-area: d;
+}
+.input-page-link:hover {
+  background-color: #FFBA60;
+}
+.input-page-link:active {
+  background-color: rgb(182, 135, 73);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+.results-title {
+  display: flex;
+}
+.left-title {
+  flex: 1;
+}
+.right-title {
+  flex: 1;
 }

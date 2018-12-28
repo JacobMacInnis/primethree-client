@@ -1,0 +1,20 @@
+.landing-page {
+  height: 100vh;
+  background: white;
+  display: grid;
+  grid-template-rows: 15% 20% 65%;
+  grid-template-areas:
+  "a"
+  "b"
+  "c";
+}
+.landing-page-logo {
+  grid-area: a;
+  height: 50%;
+}
+.about {
+  grid-area: b;
+}
+.input-page-link {
+  grid-area: c;
+}

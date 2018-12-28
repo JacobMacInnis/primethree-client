@@ -11,7 +11,7 @@ export default class InputPage extends Component {
   render() {
     return (
       <div className="input-page">
-        <Logo className='logo' logo={logo} />
+        <Logo className='logo' name={'input-page-logo'} logo={logo} />
         <Instructions className='instructions'/>
         <PrimeInput className='input'/>
         <Link to="/homepage" className="links">

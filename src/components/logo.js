@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/logo.css';
-// import logo from '../assets/primethree-logo.png';
 
 export const Logo = props => (
-	<img className='logo'
+	<img className={props.name}
 		src={props.logo} alt='PrimeThree logo'/>
 );

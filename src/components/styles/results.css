@@ -1,0 +1,18 @@
+.results-container {
+  overflow-y: scroll;
+}
+.search-results {
+  background-color: white;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.results-list {
+  overflow-y: scroll;
+}
+.left-result {
+  flex: 1
+}
+.right-result {
+  flex: 1
+}
