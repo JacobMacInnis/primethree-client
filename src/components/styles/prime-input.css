@@ -35,7 +35,9 @@
   color: #5A007B;
   font-size: 1.5em;
 }
-
+.result-link {
+  grid-area: f;
+}
 .submit-button {
   width: 200px;
   height: 40px;

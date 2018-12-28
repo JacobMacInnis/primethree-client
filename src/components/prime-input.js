@@ -80,7 +80,7 @@ class PrimeInput extends Component {
         <input type='submit' value='Search' className='submit-button' />
         </div>
         <div className='result'>{this.state.result ? this.state.result : ''}</div>
-        <Link to="/homepage" className="links">
+        <Link to="/homepage" className="result-link">
               See All Results
         </Link>
       </form>

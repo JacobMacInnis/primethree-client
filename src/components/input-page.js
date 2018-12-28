@@ -14,9 +14,6 @@ export default class InputPage extends Component {
         <Logo className='logo' name={'input-page-logo'} logo={logo} />
         <Instructions className='instructions'/>
         <PrimeInput className='input'/>
-        <Link to="/homepage" className="links">
-          See All Results
-        </Link>
       </div>
     );
   }
