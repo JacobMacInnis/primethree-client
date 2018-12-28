@@ -5,7 +5,7 @@ import { Logo } from './logo';
 import logo from '../assets/primethree-logo.png';
 import { ResultsContainer } from './results-container';
 
-export default class InputPage extends Component {
+export default class HomePage extends Component {
   
   render() {
     return (

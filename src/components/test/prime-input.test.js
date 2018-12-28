@@ -1,9 +1,9 @@
-import { App } from './App';
+import PrimeInput from '../prime-input';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-describe('<App />', () => {
+describe('<PrimeInput />', () => {
   it('Should render without crashing', () => {
-    shallow(<App />);
+    shallow(<PrimeInput />);
   });
 });

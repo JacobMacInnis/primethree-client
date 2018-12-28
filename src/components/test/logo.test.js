@@ -1,9 +1,9 @@
-import { App } from './App';
+import { Logo } from '../logo';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-describe('<App />', () => {
+describe('<Logo />', () => {
   it('Should render without crashing', () => {
-    shallow(<App />);
+    shallow(<Logo />);
   });
 });
