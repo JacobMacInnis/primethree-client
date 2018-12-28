@@ -1,20 +1,46 @@
 .landing-page {
   height: 100vh;
-  background: white;
+  /* background: white; */
   display: grid;
-  grid-template-rows: 15% 20% 65%;
+  grid-template-rows: 30% 50% 10% 10%;
   grid-template-areas:
   "a"
   "b"
-  "c";
+  "c"
+  "d";
 }
 .landing-page-logo {
   grid-area: a;
-  height: 50%;
+  margin: auto;
 }
 .about {
   grid-area: b;
+  /* background-color: blue; */
 }
-.input-page-link {
+.input-link {
   grid-area: c;
+}
+.results-page-link {
+  grid-area: d;
+}
+.input-link, .results-page-link {
+  margin: 0;
+  width: 150px;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 1.1em;
+  font-weight: 700;
+  background-color: white;
+  text-decoration: none;
+  padding: 6px;
+  border: 3px solid rgba(255,186,96,1);
+  border-radius: 10px;
+}
+.input-link:hover, .results-page-link:hover {
+  background-color: #FFBA60;
+}
+.input-link:active, .results-page-link:active {
+background-color: rgb(182, 135, 73);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }

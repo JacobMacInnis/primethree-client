@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles/input-page.css';
-import { Link } from 'react-router-dom';
 import { Logo } from './logo';
 import logo from '../assets/primethree-logo-grey.png';
 import Instructions from './instructions';

@@ -1,11 +1,22 @@
 .input-page-logo {
   margin: 1em auto;
   height: 90%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
 .home-page-logo {
   margin: .25em auto;
   height: 100%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
 .landing-page-logo {
-  height: 100px;
+  margin-top: 25px;
+  height: 90%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.landing-page-logo:hover, .home-page-logo:hover, .input-page-logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }

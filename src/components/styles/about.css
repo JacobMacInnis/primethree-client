@@ -4,16 +4,15 @@
 }
 .about-p {
   color: #5A007B;
+  font-size: 1.4em;
+}
+.about-p:last-child {
+  color: #B82BF9;
+  font-style: italic; 
 }
 
 @media (min-width: 700px) {
-  .about-h1 {
-    margin-top: 2em;
-    font-size: 3em;
-    /* display: block; */
-    position: fixed;
-    text-align: center;
-    /* left: auto; */
-    right: 5%;
+  .about {
+    max-width: 60%;
   }
-}
+} 
