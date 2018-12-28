@@ -11,7 +11,6 @@
 .home-page-logo {
   grid-area: a;
   margin: 10px auto;
-  /* height:15%; */
 }
 .input-page-link {
   grid-area: b;
@@ -27,6 +26,7 @@
 }
 .results-title-container {
   grid-area: c;
+  margin: auto;
 }
 .results {
   grid-area: d;
@@ -44,7 +44,9 @@
 }
 .left-title {
   flex: 1;
+  margin-right: 50px;
 }
 .right-title {
   flex: 1;
+  /* margin-left: 50px; */
 }

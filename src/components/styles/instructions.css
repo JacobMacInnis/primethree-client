@@ -1,5 +1,11 @@
 .instructions-h2, .instructions-h4 {
   margin: 0 auto;
   padding: 10px;
-  max-width: 500px;
+  max-width: 350px;
+} 
+
+@media (min-width: 600px) {
+  .instructions-h2, .instructions-h4 {
+    max-width: 500px;
+  }
 } 

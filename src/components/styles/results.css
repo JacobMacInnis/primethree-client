@@ -8,6 +8,9 @@
   display: flex;
 }
 .results-list {
+  margin: auto;
+  max-width: 300px;
+  border-radius: 10px;
   overflow-y: scroll;
 }
 .left-result {
