@@ -9,8 +9,17 @@ label {
 input {
   border: 2px solid #5A007B;
   border-radius: 10px;
-  height: 25px;
+  height: 30px;
   width: 50px;
   margin: 5px 15px;
   background-color: #F0F0F0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  -webkit-box-shadow: inset 1px 1px 2px 1px rgba(255,186,96,1);
+  -moz-box-shadow: inset 1px 1px 2px 1px rgba(255,186,96,1);
+  box-shadow: inset 1px 1px 2px 1px rgba(255,186,96,1);
+} 
+input:hover {
+  background-color: rgb(255, 255, 255);
 }

@@ -1,26 +1,55 @@
 .prime-input {
   justify-content: center;
-  border: 1px solid #FFBA60;
   display: grid;
-  grid-template-rows: 15% 35% 25% 25%;
+  grid-template-rows: 10% 12% 15% 17% 36% 10%;
   grid-template-areas:
   "a"
   "b"
   "c"
-  "d";
+  "d"
+  "e"
+  "f";
+}
+.number {
+  grid-area: a;
+  margin: auto;
+  justify-self: center;
+  font-size: 2.5em;
 }
 .error-container {
-  grid-area: a;
-  margin-top: 10px;
+  grid-area: b;
+  /* margin-top: 10px; */
   color: red;
   font-weight: 700;
 }
 .number-inputs {
-  grid-area: b;
-}
-.submit-button {
   grid-area: c;
+  margin: 0 auto;
+}
+.submit-button-container {
+  grid-area: d;
+  margin: auto;
 }
 .result {
-  grid-area: d;
+  grid-area: e;
+  color: #5A007B;
+  font-size: 1.5em;
+}
+
+.submit-button {
+  width: 200px;
+  height: 40px;
+  justify-self: center;
+  font-size: 1.4em;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(184,43,249,1);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(184,43,249,1);
+  box-shadow: 1px 1px 2px 1px rgba(184,43,249,1);
+}
+.submit-button:hover {
+  background-color: #FFBA60;
+}
+.submit-button:active {
+  background-color: rgb(182, 135, 73);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }

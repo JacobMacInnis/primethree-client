@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Input from './input';
 import { inputs, acceptableInputs, numbers } from './helpers/helpers';
+import { Link } from 'react-router-dom';
 import './styles/prime-input.css';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
@@ -12,9 +13,9 @@ class PrimeInput extends Component {
       string1: '',
       string2: '',
       string3: '',
-      errorMessage: 'test error (change to null)',
+      errorMessage: '',
       httpErr: null,
-      result: 'test result (change to null)'
+      result: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,9 +45,15 @@ class PrimeInput extends Component {
       this.setState({ loading: true });
       axios.post(`${API_BASE_URL}/primes`, {input: primeInput})
       .then(res => {
-        console.log(res);
-        console.log('after')
-        console.log(res.data);
+        if (res.data.result === '-1') {
+          this.setState({
+            result: `${res.data.input} was not found in the first 10,000 prime numbers`
+          });
+        } else {
+          this.setState({
+            result: `${res.data.input} first apears in the Prime Number ${res.data.result}. It is the ${res.data.index}th Prime Number`
+          })
+        }
       })
       .catch(error => {
         this.setState({ httpErr: error.response });
@@ -60,13 +67,19 @@ class PrimeInput extends Component {
     return (
       <form className="prime-input" 
         onSubmit={this.handleSubmit}>
-        <div className='error-container'>{this.state.errorMessage ?           this.state.errorMessage : ''}
+        <h2 className='number'>{`${this.state.string1}    ${this.state.string2}    ${this.state.string3} `}</h2>
+        <div className='error-container'>     {this.state.errorMessage ?           this.state.errorMessage : ''}
         </div>
         <div className='number-inputs'>
           {numberInputs}
         </div>
-        <input type='submit' value='Submit' classname='submit-button' />
+        <div className='submit-button-container'>
+        <input type='submit' value='Search' className='submit-button' />
+        </div>
         <div className='result'>{this.state.result ? this.state.result : ''}</div>
+        <Link to="/homepage" className="links">
+              See All Results
+        </Link>
       </form>
     );
   }

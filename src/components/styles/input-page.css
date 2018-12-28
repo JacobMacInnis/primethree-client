@@ -1,5 +1,6 @@
-.home-page {
+.input-page {
   height: 100vh;
+  background: white;
   display: grid;
   grid-template-rows: 15% 20% 65%;
   grid-template-areas:
@@ -10,9 +11,12 @@
 .logo {
   grid-area: a;
 }
-.input-page {
+.instructions {
   grid-area: b;
 }
-.results {
+.input {
   grid-area: c;
+}
+.results {
+  grid-area: d;
 }

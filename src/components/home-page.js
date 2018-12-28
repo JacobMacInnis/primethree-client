@@ -2,25 +2,20 @@ import React, { Component } from 'react';
 import './styles/home-page.css';
 import { Link } from 'react-router-dom';
 import { Logo } from './logo';
-import Instructions from './instructions';
-import PrimeInput from './prime-input.js';
+import logo from '../assets/primethree-logo.png';
 import Results from './results';
 
-class HomePage extends Component {
+export default class InputPage extends Component {
   
   render() {
     return (
       <div className="home-page">
-        {/* <Link to="/" className="links">
-              Landing Page
-        </Link> */}
-        <Logo className='logo' />
-        <Instructions className='instructions'/>
-        <PrimeInput className='input'/>
-        <Results className='results'/>        
+        <Logo className='logo' logo={logo} />
+        <Link to="/inputpage" className="input-page-link">
+              Search New Number
+        </Link>
+        <Results className='results' />
       </div>
     );
   }
 }
-
-export default HomePage;

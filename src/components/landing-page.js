@@ -10,7 +10,7 @@ class LandingPage extends Component {
       <div className="landing-page">
         <Logo />
         <About />        
-        <Link to="/homepage" className="links">
+        <Link to="/inputpage" className="links">
               New Input
         </Link>
       </div>
