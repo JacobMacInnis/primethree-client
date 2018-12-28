@@ -11,7 +11,7 @@
 .home-page-logo {
   grid-area: a;
   margin: 10px auto;
-  height:15%;
+  /* height:15%; */
 }
 .input-page-link {
   grid-area: b;
