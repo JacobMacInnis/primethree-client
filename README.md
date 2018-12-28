@@ -23,7 +23,7 @@ $ npm start
 
 <img src='https://github.com/JacobMacInnis/primethree-server/blob/master/assets/primethree-mobile-screenshots.png?raw=true' alt='PrimeThree mobile screenshots'>
 
-<img src='https://github.com/JacobMacInnis/primethree-server/blob/master/assets/primethree-desktop-screenshots.png?raw=true' alt='PrimeThree desktop screenshots' width='90vw'>
+<img src='https://github.com/JacobMacInnis/primethree-server/blob/master/assets/primethree-desktop-screenshots.png?raw=true' alt='PrimeThree desktop screenshots'>
 
 
 
