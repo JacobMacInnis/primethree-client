@@ -10,9 +10,9 @@ class PrimeInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      string1: '',
-      string2: '',
-      string3: '',
+      string1: '_',
+      string2: '_',
+      string3: '_',
       errorMessage: '',
       loading: false,
       httpErr: null,
@@ -29,10 +29,17 @@ class PrimeInput extends Component {
         errorMessage: 'Error: Must be single digit number ex. (0,1,2,3,4,5,6,7,8,9)'
        })
     } else {
-      this.setState({
-        errorMessage: null,
-        [(event.target.name)]: char
-      });
+      if (char === ' ' || char === '') {
+        this.setState({
+          errorMessage: null,
+          [(event.target.name)]: '_'
+        });  
+      } else {
+        this.setState({
+          errorMessage: null,
+          [(event.target.name)]: char
+        });
+      }
     }
   }
   handleSubmit(event) {
