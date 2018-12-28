@@ -1,9 +1,16 @@
 ![PrimeThree logo](src/assets/primethree-logo-readme.png "PrimeThree Logo") 
 # PrimeThree Client
 
-#### PrimeThree Client is a React App built to sync with [PrimeThree Node API Server](https://github.com/JacobMacInnis/primethree-server)
+Prime Three takes three digits as an input and searches within the first 10,000 prime numbers for the first prime number that contains the same digits in the same order.
+
+ex. search 121 and get...
+
+'121 first appears in the Prime Number 1213. It is the 197th Prime Number'
 
 # Instructions
+
+#### PrimeThree Client is a React App built to sync with [PrimeThree Node API Server](https://github.com/JacobMacInnis/primethree-server)
+
 - Choose Clone in the github repo and copy the web URL (https://github.com/JacobMacInnis/primethree-client.git)
 - Open CLI and cd to desired location
 - Enter following git commands
