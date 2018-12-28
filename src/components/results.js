@@ -31,8 +31,10 @@ class Results extends Component {
       })
     }
     return (
-      <div className='results-list'>
-        {results}
+      <div className='results-container'>
+        <div className='results-list'>
+          {results}
+        </div>
       </div>
     );
   }
